@@ -1,0 +1,14 @@
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\bin\Debug\net8.0\CalculadoraDeCalorias.exe
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\bin\Debug\net8.0\CalculadoraDeCalorias.deps.json
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\bin\Debug\net8.0\CalculadoraDeCalorias.runtimeconfig.json
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\bin\Debug\net8.0\CalculadoraDeCalorias.dll
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\bin\Debug\net8.0\CalculadoraDeCalorias.pdb
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.AssemblyInfoInputs.cache
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.AssemblyInfo.cs
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.csproj.CoreCompileInputs.cache
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.dll
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\refint\CalculadoraDeCalorias.dll
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.pdb
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.genruntimeconfig.cache
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\ref\CalculadoraDeCalorias.dll
