@@ -10,7 +10,7 @@ int fatorAtividade = 0;
 int respObjetivo = 0;
 double quantidadeDeCalorias = 0;
 
-//ool sexo = false;
+
 Console.WriteLine("\x1b[1;30;42mCalculadora de gasto calórico\x1b[0m \n");
 
 
@@ -82,7 +82,6 @@ do
     Console.WriteLine("\x1b[1;35;40mExtremamente ativo (Atleta / treina 2x ou mais por dia) = 5\x1b[0m \n");
     Console.Write("Digite o nº do fator de atividade em que você se encaixa: ");
     fatorAtividade = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("\n");
 
 
     if (fatorAtividade != 1 && fatorAtividade != 2 && fatorAtividade != 3 && fatorAtividade != 4 && fatorAtividade != 5)
@@ -117,6 +116,7 @@ Console.WriteLine($"- Seu gasto energético total diário é: {Math.Round(calcul
 
 Console.WriteLine("-------------------------------------------------------------");
 
+
 do
 {
     Console.WriteLine("\x1b[1;37;45mQual o seu objetivo?\x1b[0m \n");
@@ -147,14 +147,19 @@ do
         Console.Write("Digite a quantidade de calorias que deseja diminuir: ");
     else if (respObjetivo == 3)
         Console.Write("Digite a quantidade de calorias que deseja aumentar: ");
+    else if (respObjetivo == 2) 
+    {
+        quantidadeDeCalorias = 0;
+        break;
+    }
 
     quantidadeDeCalorias = Convert.ToDouble(Console.ReadLine());
 
-    if (quantidadeDeCalorias <= 0)
+    if (quantidadeDeCalorias <= 0 && respObjetivo != 2)
         Console.WriteLine("Número inválido. Digite novamente");
 
 
-} while (quantidadeDeCalorias <= 0);
+} while (quantidadeDeCalorias <= 0 && respObjetivo != 2);
 
 CalculadoraCaloriasDaDieta cd1 = new CalculadoraCaloriasDaDieta(cg1);
 double caloriasDaDieta = cd1.CalculoCaloriasDaDieta(respObjetivo, fatorAtividade, quantidadeDeCalorias);
@@ -163,30 +168,30 @@ Macro m1 = new Macro(cd1);
 var macros = m1.CalculoMacrosDaDieta(respObjetivo, caloriasDaDieta, fatorAtividade, quantidadeDeCalorias);
 
 Console.WriteLine("-------------------------------------------------------------");
+Console.WriteLine($"\x1b[1;32;40m#### Informações Nutricionais -- {p1.Nome} ####\x1b[0m\n");
 
 
 if (respObjetivo == 1)
 {
-    Console.WriteLine($"A quantidade de calorias que você precisa consumir para emagrecer é: {caloriasDaDieta} kcal");
-    Console.WriteLine($"Quantidade de carboidrato: {macros.QuantidadeDeCarboidrato}g");
-    Console.WriteLine($"Quantidade de proteína: {macros.QuantidadeDeProteina}g");
-    Console.WriteLine($"Quantidade de gordura: {macros.QuantidadeDeGordura}g");
+    Console.WriteLine($"A quantidade de calorias que você precisa consumir para emagrecer é: \x1b[1;33m{caloriasDaDieta} kcal\x1b[0m");
+    Console.WriteLine($"Quantidade de carboidrato: \x1b[1;33m{macros.QuantidadeDeCarboidrato}g\x1b[0m");
+    Console.WriteLine($"Quantidade de proteína: \x1b[1;33m{macros.QuantidadeDeProteina}g\x1b[0m");
+    Console.WriteLine($"Quantidade de gordura: \x1b[1;33m{macros.QuantidadeDeGordura}g\x1b[0m");
 }
 else if (respObjetivo == 2)
 {
-    Console.WriteLine($"A quantidade de calorias que você precisa consumir para manter seu peso é: {caloriasDaDieta} kcal");
-    Console.WriteLine($"Quantidade de carboidrato: {macros.QuantidadeDeCarboidrato}g");
-    Console.WriteLine($"Quantidade de proteína: {macros.QuantidadeDeProteina}g");
-    Console.WriteLine($"Quantidade de gordura: {macros.QuantidadeDeGordura}g");
+    Console.WriteLine($"A quantidade de calorias que você precisa consumir para manter seu peso é: \x1b[1;33m{caloriasDaDieta} kcal\x1b[0m");
+    Console.WriteLine($"Quantidade de carboidrato: \x1b[1;33m{macros.QuantidadeDeCarboidrato}g\x1b[0m");
+    Console.WriteLine($"Quantidade de proteína: \x1b[1;33m{macros.QuantidadeDeProteina}g\x1b[0m");
+    Console.WriteLine($"Quantidade de gordura: \x1b[1;33m{macros.QuantidadeDeGordura}g\x1b[0m");
 }
 else if (respObjetivo == 3)
 {
-    Console.WriteLine($"A quantidade de calorias que você precisa consumir para ganhar massa é: {Math.Round(caloriasDaDieta)} kcal");
-    Console.WriteLine($"Quantidade de carboidrato: {Math.Round(macros.QuantidadeDeCarboidrato)}g");
-    Console.WriteLine($"Quantidade de proteína: {Math.Round(macros.QuantidadeDeProteina)}g");
-    Console.WriteLine($"Quantidade de gordura: {Math.Round(macros.QuantidadeDeGordura)}g");
+    Console.WriteLine($"A quantidade de calorias que você precisa consumir para ganhar massa é: \x1b[1;33m{Math.Round(caloriasDaDieta)} kcal\x1b[0m");
+    Console.WriteLine($"Quantidade de carboidrato: \x1b[1;33m{Math.Round(macros.QuantidadeDeCarboidrato)}g\x1b[0m");
+    Console.WriteLine($"Quantidade de proteína: \x1b[1;33m{Math.Round(macros.QuantidadeDeProteina)}g\x1b[0m");
+    Console.WriteLine($"Quantidade de gordura: \x1b[1;33m{Math.Round(macros.QuantidadeDeGordura)}g\x1b[0m");
 }
-
 
 
 

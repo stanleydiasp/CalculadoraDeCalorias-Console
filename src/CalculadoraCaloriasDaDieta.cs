@@ -12,7 +12,7 @@ namespace CalculadoraDeCalorias.src
             _calculadoraGet = calculadoraGet;
         }
 
-        //Fazer de um jeito para que seja possível a pessoa escolher a quantidade de calorias que deseja reduzir!
+        //Voltar aqui!! -- Fazer de um jeito para que seja possível a pessoa escolher a quantidade de calorias que deseja reduzir ou aumentar!
         public double CalculoCaloriasDaDieta(int respObjetivo, int fatorAtividade, double quantidadeDeCalorias)
         {
             double caloriasDaDieta = 0;

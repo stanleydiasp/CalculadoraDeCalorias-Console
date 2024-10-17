@@ -37,7 +37,6 @@ namespace CalculadoraDeCalorias.src
                 quantidadeDeGordura = (calorias * 0.2) / 9;
             }
 
-
             var result = new MacroResult()
             {
                 QuantidadeDeCarboidrato = quantidadeDeCarboidrato,

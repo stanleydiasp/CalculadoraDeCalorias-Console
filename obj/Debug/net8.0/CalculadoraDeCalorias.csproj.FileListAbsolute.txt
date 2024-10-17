@@ -12,3 +12,4 @@ C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\refint\
 C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.pdb
 C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.genruntimeconfig.cache
 C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\ref\CalculadoraDeCalorias.dll
+C:\Projetos\CalculadoraDeCalorias\CalculadoraDeCalorias\obj\Debug\net8.0\CalculadoraDeCalorias.sourcelink.json
